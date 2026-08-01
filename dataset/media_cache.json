@@ -1,0 +1,17 @@
+{
+  "img_001": {
+    "ocr_text": "Sportena Reg No.TN-05-02-07705 Apollo HOSPITALS Jointly Presents KID'S & MOM WALKATHON 1KM walk with your MOM FREE FOR ALL MEDAL CERTIFICATE BIBS PENCIL BOX REFRESHMENT Decathlon MOGAPPAIR, CHENNAI SPORTS PARTNER Decathlon REFRESHMENT PARTNER Akshayakalpa Organic WALK FOR HEALTH 02 AUGUST 2026 TIME: 8.00AM ENTRY FEE: \u20b9 199/- Google Pay 87783 94729 For Details : 87783 94729 / 86104 43961 / 93808 69045 MOM 0001 KID 0002 KID 0003",
+    "intent": "event",
+    "summary": "Join the Kid's & Mom Walkathon, a 1KM walk with your mom, on August 2, 2026, at 8:00 AM. The event is free for all, with an entry fee of \u20b9199/-. Participants will receive a medal, certificate, bibs, pencil box, and refreshment. The walk takes place at Decathlon, Mogappair, Chennai. The event is jointly presented by Sportena and Apollo Hospitals, with Decathlon as the Sports Partner and Akshayakalpa Organic as the Refreshment Partner. For details, contact 87783 94729, 86104 43961, or 93808 69045. Google Pay is available at 87783 94729."
+  },
+  "img_002": {
+    "ocr_text": "WATCH THE BIGGEST CINEMATIC EPIC IN\n4DX MX4D\nAT AN UNBEATABLE PRICE\nTICKETS\nNOW STARTING AT\n\u20b9199\nONLY ON 21ST JUL'26\nA FILM BY CHRISTOPHER NOLAN\nTHE ODYSSEY\n17.07.26\nENJOY IMMERSIVE WITH MX4D FILM CAMERAS\nPVR INOX\nFOR BOOKINGS VISIT PVR OR INOX WEBSITE / APP\n*OFFER APPLICABLE IN SELECT CITIES, CINEMAS & SHOWS. OTHER T&C APPLY",
+    "intent": "promotion",
+    "summary": "This is a promotional advertisement for a cinematic epic titled \"The Odyssey\" by Christopher Nolan, showing in 4DX and MX4D. Tickets are available starting at \u20b9199, valid only on July 21st, 2026. Bookings can be made through the PVR or Inox website/app, with the offer applicable in select cities, cinemas, and shows, subject to other terms and conditions."
+  },
+  "img_003": {
+    "ocr_text": "HH Happy\nHolidayers\nTRAVEL. EXPLORE. ENJOY\nLADAKH\nTOUR PACKAGES\nEXPERIENCE THE MAGIC OF LADAKH\nUP TO\n40% OFF\nSIGHTSEEING\nTRANSFERS\nMEALS\nSTAY\nBOOK NOW >\n+91 98056 07657\n20K+\nTravellers\n10K+\nHotels\n5K+\nTours\n06+\nOffices\nwww.happyholidayers.com",
+    "intent": "promotion",
+    "summary": "Happy Holidayers promotes Ladakh Tour Packages with up to 40% off, including sightseeing, transfers, meals, and stay. They encourage booking now and provide a contact number (+91 98056 07657), website (www.happyholidayers.com), and stats like 20K+ Travellers, 10K+ Hotels, 5K+ Tours, and 06+ Offices."
+  }
+}

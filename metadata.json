@@ -1,0 +1,8 @@
+{
+  "name": "Message Notification Router",
+  "description": "AI-powered multimodal notification router and dashboard for WhatsApp messages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
