@@ -6,10 +6,10 @@ import sys
 # Ensure code package is importable
 sys.path.insert(0, os.path.abspath("."))
 
-from code.data_loader import DataLoader
-from code.multimodal_processor import MultimodalProcessor
-from code.context_trust_engine import ContextTrustEngine
-from code.decision_router import DecisionRouter
+from src.data_loader import DataLoader
+from src.multimodal_processor import MultimodalProcessor
+from src.context_trust_engine import ContextTrustEngine
+from src.decision_router import DecisionRouter
 
 # Page Config
 st.set_page_config(

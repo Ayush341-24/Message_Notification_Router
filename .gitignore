@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Node (legacy)
+node_modules/
+
+# Logs
+*.log
+
+# Dataset cache (keep CSVs and media, ignore generated cache)
+dataset/media_cache.json
+
+# Old code/ directory (replaced by src/)
+code/

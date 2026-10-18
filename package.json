@@ -1,9 +1,0 @@
-{
-  "name": "message-notification-router",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "streamlit run app.py --server.port 3000 --server.address 0.0.0.0 --server.headless true --server.enableCORS false --server.enableXsrfProtection false",
-    "start": "streamlit run app.py --server.port 3000 --server.address 0.0.0.0 --server.headless true --server.enableCORS false --server.enableXsrfProtection false"
-  }
-}

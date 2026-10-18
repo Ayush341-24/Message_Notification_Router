@@ -18,26 +18,90 @@ Read [`problem_statement.md`](./problem_statement.md) for the full task spec, in
 
 ```text
 .
-├── AGENTS.md                         # Rules for AI coding tools + transcript logging
+├── .streamlit/
+│   └── config.toml                   # Streamlit server configuration
+├── app.py                            # Streamlit dashboard (main entry point)
+├── src/                              # Core routing engine package
+│   ├── __init__.py
+│   ├── main.py                       # CLI entry point (generates output.csv)
+│   ├── data_loader.py                # Data ingestion & indexing engine
+│   ├── multimodal_processor.py       # Text NLP, Image OCR, Voice STT
+│   ├── context_trust_engine.py       # Context & trust scoring
+│   ├── decision_router.py            # Final routing decisions
+│   └── evaluation/
+│       └── main.py                   # Evaluation runner
+├── dataset/
+│   ├── messages.csv                  # Messages to route
+│   ├── output.csv                    # Generated predictions
+│   ├── sample_messages.csv           # Solved examples
+│   ├── users.csv                     # User notification behavior
+│   ├── groups.csv                    # Group metadata
+│   ├── group_members.csv             # User-group relationships
+│   ├── business_accounts.csv         # Business sender metadata
+│   ├── user_business_history.csv     # User-business history
+│   ├── message_history.csv           # Historical messages
+│   ├── message_events.csv            # User reactions to historical messages
+│   ├── images.csv                    # Image IDs and media file paths
+│   ├── voice_notes.csv               # Voice note IDs and media file paths
+│   ├── daily_notification_summary.csv
+│   └── media/
+│       ├── images/                   # JPG image files
+│       └── audio/                    # MP3 voice note files
+├── requirements.txt                  # Python dependencies
+├── .gitignore
+├── AGENTS.md                         # Rules for AI coding tools
 ├── problem_statement.md              # Full challenge statement
-├── README.md                         # You are here
-└── dataset/
-    ├── messages.csv                  # Messages to route
-    ├── output.csv                    # Blank submission template
-    ├── sample_messages.csv           # Solved examples
-    ├── users.csv                     # User notification behavior
-    ├── groups.csv                    # Group metadata
-    ├── group_members.csv             # User-group relationships
-    ├── business_accounts.csv         # Business sender metadata
-    ├── user_business_history.csv     # User-business history
-    ├── message_history.csv           # Historical messages
-    ├── message_events.csv            # User reactions to historical messages
-    ├── images.csv                    # Image IDs and media file paths
-    ├── voice_notes.csv               # Voice note IDs and media file paths
-    ├── daily_notification_summary.csv
-    └── media/
-        ├── images/
-        └── audio/
+└── README.md                         # You are here
+```
+
+---
+
+## Deploy on Streamlit Community Cloud
+
+### Prerequisites
+
+- A GitHub account
+- Push this repository to a GitHub repo (public or private)
+
+### Steps
+
+1. **Push to GitHub:**
+   ```bash
+   git add .
+   git commit -m "Prepare for Streamlit Cloud deployment"
+   git push origin main
+   ```
+
+2. **Go to [share.streamlit.io](https://share.streamlit.io)**
+
+3. **Click "New app"** and fill in:
+   - **Repository:** `your-username/Message_Notification_Router`
+   - **Branch:** `main`
+   - **Main file path:** `app.py`
+
+4. **Set secrets (optional):** If you want Gemini API integration, go to **App Settings → Secrets** and add:
+   ```toml
+   GEMINI_API_KEY = "your-api-key-here"
+   ```
+
+5. **Click Deploy!** — Streamlit Cloud will install dependencies from `requirements.txt` and launch the app.
+
+---
+
+## Run Locally
+
+### Streamlit Dashboard
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+### CLI (Generate output.csv)
+
+```bash
+pip install -r requirements.txt
+python -m src.main
 ```
 
 ---
